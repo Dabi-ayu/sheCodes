@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #f5f0fe;
+      }
+      div {
+        margin: 0 auto;
+        border-radius: 10px;
+        width: 700px;
+        height: 600px;
+        padding: 30px;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #ffff 0%, #0693e3 100%);
+        align-items: center;
+        text-align: center;
+      }
+      h1 {
+        color: #eaf6f9;
+      }
+      h2 {
+        color: #00ffff;
+        font-family: Helvetica, sans-serif;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      strong {
+        color: #316585;
+      }
+      a:hover {
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+        color: #6565e4;
+      }
+      button {
+        color: #ffff;
+        background-color: #0693e3;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin: 2px;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      }
+      .love-it {
+        color: #ffff;
+      }
+      .author {
+        font-weight: 800;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>COASTAL SUMMER</h1>
+      <h2>Soft sand, rolling waves and endless sunshine😍😍😍</h2>
+      <em class="love-it">What's not to love?</em>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/811/original/beachy.jfif?1683461954"
+        alt="coastal image"
+      />
+      <p>
+        Our memories of the ocean will linger on, long after our footprints in
+        the sand are gone.The beach is always a good idea. At the beach, life is
+        different. Sky aboveT, the oceans roar is music to the soul,Less
+        worries, more sunshine. The beach-the only place where salt lowers your
+        blood pressure.
+      </p>
+      <button>Save your space</button><br /><br />
+      <strong
+        >Welcome to the coastal ride😎<br />You may want a book? get it at
+        <a href="https://beachbooks37.indielite.org/">Beach Books</a></strong
+      ><br /><br />
+      <em class="author">Coded by Dabi Ayu</em>
+    </div>
+    <script>
+      function headingupdated(newheading) {
+        let h2 = document.querySelector("h2");
+
+        h2.innerHTML = newheading;
+      }
+
+      function getInfo() {
+        let Name = prompt("What is your name?");
+        let age = prompt("What is your age?");
+
+        if (age < 16) {
+          alert(`You're only a kid ${Name}😉`);
+        } else {
+          let hour = prompt("What hour will you love for your coastal ride?");
+
+          if (hour >= 12 && hour <= 16) {
+            headingupdated(`Go feel the sun at coastal summer ${Name}🌞🌞🥰`);
+          } else {
+            headingupdated(
+              `Feel the cool breeze at coastal summer ${Name}🌨️🤩🤩`
+            );
+          }
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", getInfo);
+    </script>
+  </body>
+</html>
