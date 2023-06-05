@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let now = new Date();
+      function formatDate(formatedDate) {
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        let months = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        let date = formatedDate.getDate();
+        let year = formatedDate.getFullYear();
+        let day = days[formatedDate.getDay()];
+        let month = months[formatedDate.getMonth()];
+        let dates = `Today is ${day}, ${month} ${date} ${year}`;
+
+        return dates;
+      }
+      let birthday = new Date("2002/11/28");
+      console.log(formatDate(birthday));
+    </script>
+  </body>
+</html>
