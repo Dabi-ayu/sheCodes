@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+:root {
+    --primary-color: blueviolet;
+    --secondary-color: #3b3ba3;
+    --box-shadow: 2px 1px 2px black;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+span {
+    font-size: 45px;
+}
+
+.home-parag {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: pink;
+    transition: all 150ms ease-in-out;
+}
+
+a:visited {
+    color: red;
+}
+
+.details .contact {
+    background: var(--secondary-color);
+    color: #e2e0f5;
+    box-shadow: var(--box-shadow);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.details .about {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.about-me div {
+    padding: 5px;
+    background: #e9e6e6;
+    border-radius: 4px;
+    flex: 1;
+}
